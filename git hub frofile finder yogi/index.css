@@ -1,0 +1,216 @@
+
+body{
+    padding:0px;
+    margin:0px;
+}
+
+/*main container*/
+.main_container{
+    min-height: 100vh;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    background-image: linear-gradient(to right,#8b939a,#5b6467);
+}
+
+
+/*header container */
+.header_container{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+@media screen and (min-width:300px){
+    .header_container{
+        flex-direction: row;
+    }
+}
+
+
+.github_image{
+    height:50px;
+    width:50px;
+    border-radius: 30px;
+    margin-right:10px;
+}
+@media screen and (min-width:768px){
+    .github_image{
+        height:100px;
+        width:100px;
+    }
+}
+.header_heading{
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+}
+@media screen and (min-width:768px){
+    .header_heading{
+        font-size: 38px;
+    }
+}
+
+.github_heading{
+    color:yellow;
+}
+
+.profile_heading{
+    color:blue;
+}
+
+.finder_heading{
+    color:red;
+}
+
+
+/* Search container*/
+
+.search_container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_box_ele{
+    width:80%;
+    border-radius:8px;
+    border:none;
+    padding:8px;
+    margin-right:6px;
+
+}
+@media screen and (min-width:768px){
+    .search_box_ele{
+        width:50%;
+    }
+}
+
+.search_button_ele{
+    border-radius:8px;
+    color:white;
+    background-color: blue;
+    text-align:center;
+    border:none;
+    padding:8px 18px 8px 18px;
+}
+
+
+/* User profile container main*/
+.user_profile_container{
+    display:flex;
+    flex-direction:column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width:90%;
+    margin-top:30px;
+    margin-bottom:50px;
+}
+
+@media screen and (min-width:768px){
+    .user_profile_container{
+        flex-direction: row;
+    }
+}
+
+
+
+/* user account details */
+.user_account_details{
+    display:flex;
+    flex-direction:row;
+    border-right: 5px;
+    width:100%;
+    border-color: rgb(126, 33, 33);
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    padding:10px;
+}
+
+@media screen and (min-width:768px){
+    .user_account_details{
+        flex-direction: column;
+    }
+}
+
+
+/*image button container*/
+.image_button_container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* user image properties */
+.user_image{
+    width:100px;
+    height:100px;
+    border-radius:50px;
+}
+
+/*git hub button*/
+.github_button{
+    background-image: linear-gradient(to right,#fc575e,#90d5ec);
+    border-radius:8px;
+    border:none;
+    padding:10px;
+    margin-top:15px;
+}
+
+.user_not_found{
+    margin-left:50px;
+}
+
+/* user account information container*/
+.user_account_information_container{
+    margin-left:40px;
+    display:flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px){
+    .user_account_information_container{
+        margin-top:10px;
+        margin-left:0px;
+        display:flex;
+        justify-content: flex-start;
+    }
+}
+
+.user_name,.full_name{
+    font-size:20px;
+    font-weight:600;
+    color:white;
+    margin-bottom: 0px;
+}
+
+/*followers , following info */
+.count_info_container{
+    display: flex;
+    flex-direction:row;
+    margin-top:5px;
+}
+
+.followers_info,.following_info{
+    background-color: #fc575e;
+    color:white;
+    text-align: center;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    margin-right:5px;
+    font-size:20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.following_info{
+    background-color: #57fc6d;
+}
+
+.githb_href{
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+}
